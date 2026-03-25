@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import {
   LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid
 } from "recharts";
-const API = "http://127.0.0.1:5000";
+const API = import.meta.env.VITE_API_URL;
 
 function Dashboard({ token, logout }) { 
   const [chatOpen, setChatOpen] = useState(null);
